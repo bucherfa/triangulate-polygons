@@ -1,4 +1,6 @@
-# Triangle helper
+# Triangulate Polygons
+
+> Convert GeoJSON Polygons into Meshes for Unity with Triangle (Delaunay Triangulator)
 
 ## Requirements
 
@@ -13,7 +15,9 @@
     ```bash
     ./run.sh
     ```
-3. You will find a new file `output.geo.json` which contains all triangles.
+3. You will find two new files
+   * `output.unity.json` which contains all triangles and vertices ready to be read into unity and
+   * `output.geo.json` which contains all triangles as a GeoJSON.
 
 ## Example input
 
