@@ -66,4 +66,4 @@ for (const triangle of triangles) {
 }
 
 fs.writeFileSync('./output.geo.json', JSON.stringify(json, null, 2));
-fs.writeFileSync('./output.unity.json', JSON.stringify({ vertices: nodes, triangles: trianglesAsIndices }, null, 2));
+fs.writeFileSync('./output.unity.json', JSON.stringify({ vertices: nodes, triangles: trianglesAsIndices.map(t => [t[0], t[2], t[1]]) }, null, 2));
